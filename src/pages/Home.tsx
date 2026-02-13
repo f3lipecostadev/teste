@@ -57,11 +57,11 @@ export default function Home() {
                 </button>
               </Link>
             </div>
-            <div className="flex-1 flex justify-center">
+            <div className="flex-1 flex justify-center w-[100%] md:w-[100%]">
               <img
                 src="/images/pan-say-hi.png"
                 alt="Mascote em Libras"
-                className="w-full max-w-[500px] md:max-w-[900px] drop-shadow-2xl"
+                className="w-full max-w-[900px] md:max-w-[900px] drop-shadow-2xl"
               />
             </div>
           </div>
@@ -74,14 +74,14 @@ export default function Home() {
             from-[#6a2de2]
             to-[#e7b7ff]
             px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[130px]
-            pb-40 md:pb-[320px]
+            pb-20 md:pb-40
             overflow-hidden
           ">
           <div className="relative z-20">
             {/* Container pai para os bubbles */}
             <div className="flex flex-col gap-10 md:gap-20">
               {/* Primeira linha: 5.0 Estudo didático e Venha! */}
-              <div className="flex justify-center items-center gap-8 md:gap-45">
+              <div className="flex justify-center items-center gap-8 md:gap-12 xl:gap-45">
                 <div className="bg-[#7d8cff] px-6 py-4 md:px-14 md:py-8 rounded-[36px] drop-shadow-xl text-center hover:scale-105 transition-transform">
                   <div className="flex items-center justify-center gap-2">
                     <span className="text-xl md:text-2xl font-extrabold text-[#0b2a4a]">
@@ -91,17 +91,28 @@ export default function Home() {
                   </div>
                   <p className="mt-1 text-[#0b2a4a]">Estudo didático</p>
                 </div>
-                <div
-                  className="bg-[#7d8cff] px-6 py-4 md:px-14 md:py-8 rounded-[32px] drop-shadow-xl hover:scale-105 transition-transform md:min-h-[120px] flex items-center justify-center
-">
-                  <p className="text-xl md:text-2xl font-extrabold text-[#0b2a4a] text-center">
-                    Venha!
-                  </p>
+                <div className="bg-[#7d8cff] px-6 py-4 md:px-14 md:py-8 rounded-[36px] drop-shadow-xl text-center hover:scale-105 transition-transform">
+                  <div className="flex items-center justify-center gap-2">
+                    <span className="text-xl md:text-2xl font-extrabold text-[#0b2a4a]">
+                      5.0{" "}
+                    </span>
+                    <AiFillStar className="text-xl md:text-2xl text-[#FFCC00]" />
+                  </div>
+                  <p className="mt-1 text-[#0b2a4a]">Ensino interativo</p>
                 </div>
               </div>
             </div>
             {/* Segunda linha: 5.0 Conteúdo acessível e 5.0 Aprendizado inclusivo */}
-            <div className="flex justify-between items-center px-10 md:px-20 gap-8 md:gap-16">
+            <div
+              className="
+                flex
+                justify-center
+                xl:justify-between
+                items-center
+                px-6 md:px-16 xl:px-20
+                gap-8 md:gap-40 xl:gap-24
+                mt-8 md:mt-12
+              ">
               <div className="bg-[#7d8cff] px-6 py-4 md:px-14 md:py-8 rounded-[36px] drop-shadow-xl text-center hover:scale-105 transition-transform">
                 <div className="flex items-center justify-center gap-2">
                   <span className="text-xl md:text-2xl font-extrabold text-[#0b2a4a]">
@@ -109,22 +120,22 @@ export default function Home() {
                   </span>
                   <AiFillStar className="text-xl md:text-2xl text-[#FFCC00]" />
                 </div>
-                <p className="mt-1 text-[#0b2a4a]">Conteúdo acessível</p>
+                <p className="mt-1 text-[#0b2a4a]">Didática simples</p>
               </div>
-              <div className="bg-[#7d8cff] px-8 py-4 md:px-16 md:py-8 rounded-[36px] drop-shadow-xl text-center hover:scale-105 transition-transform">
+              <div className="bg-[#7d8cff] px-6 py-4 md:px-14 md:py-8 rounded-[36px] drop-shadow-xl text-center hover:scale-105 transition-transform">
                 <div className="flex items-center justify-center gap-2">
                   <span className="text-xl md:text-2xl font-extrabold text-[#0b2a4a]">
                     5.0{" "}
                   </span>
                   <AiFillStar className="text-xl md:text-2xl text-[#FFCC00]" />
                 </div>
-                <p className="mt-1 text-[#0b2a4a]">Aprendizado inclusivo</p>
+                <p className="mt-1 text-[#0b2a4a]">Conteúdo visual</p>
               </div>
             </div>
           </div>
 
           {/* Divisão abaixo com flex */}
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-10 md:gap-20 mt-20 md:mt-40">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-10 md:gap-20 mt-20 md:mt-40">
             {/* Esquerda: Imagens do mascote + container de texto */}
             <div className="flex-1 relative flex justify-center">
               {/* Wrapper relativo para controlar tudo */}
@@ -184,7 +195,7 @@ export default function Home() {
             </div>
 
             {/* Direita: Container roxo + botão flutuante */}
-            <div className="flex-1 relative flex justify-start mt-60">
+            <div className="flex-1 relative flex justify-center items-center mt-60">
               {/* Wrapper igual ao da esquerda */}
               <div className="relative w-full max-w-[450px]">
                 {/* Container roxo */}
@@ -233,29 +244,29 @@ export default function Home() {
         </section>
         <section
           className="
-    relative
-    px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[130px]
-    pt-10 md:pt-12
-    pb-20 md:pb-[120px]
-    bg-gradient-to-b
-    from-[#e7b7ff]
-    to-[#7f33ff]
-  ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
+            relative
+            px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[130px]
+            pt-10 md:pt-12
+            pb-20 md:pb-[120px]
+            bg-gradient-to-b
+            from-[#e7b7ff]
+            to-[#7f33ff]
+          ">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
             {/* ESQUERDA */}
-            <div className="flex-1 relative flex justify-center">
+            <div className="flex-1 relative flex justify-center items-center">
               <div className="relative w-full max-w-[650px]">
                 {/* Mascote */}
                 <img
                   src="/images/pan-normal.png"
                   className="
-            absolute
-            -top-28
-            left-25
-            w-[100%]
-            z-20
-            drop-shadow-2xl
-          "
+                    absolute
+                    -top-28
+                    left-25
+                    w-[100%]
+                    z-20
+                    drop-shadow-2xl
+                  "
                   alt="Pan normal"
                   loading="lazy"
                 />
@@ -263,15 +274,15 @@ export default function Home() {
                 {/* Container amarelo */}
                 <div
                   className="
-            relative
-            mt-32
-            bg-[#FFCC00]
-            text-[#7f33ff]
-            rounded-[64px]
-            px-8 py-8 md:px-20 md:py-16
-            z-10
-            drop-shadow-2xl
-          ">
+                    relative
+                    mt-32
+                    bg-[#FFCC00]
+                    text-[#7f33ff]
+                    rounded-[64px]
+                    px-8 py-8 md:px-20 md:py-16
+                    z-10
+                    drop-shadow-2xl
+                  ">
                   <p className="text-lg md:text-xl leading-relaxed font-medium">
                     O aprendizado por aqui é para todo mundo! Além de ajudar nas
                     aulas de biologia, você vai explorar o corpo humano através
@@ -285,14 +296,14 @@ export default function Home() {
             </div>
 
             {/* DIREITA */}
-            <div className="flex-1 flex justify-center">
+            <div className="flex-1 flex justify-center items-center mt-20">
               <img
                 src="/images/body.png"
                 className="
-          w-full
-          max-w-[500px] md:max-w-[700px]
-          drop-shadow-2xl
-        "
+              w-full
+              max-w-[500px] md:max-w-[700px]
+              drop-shadow-2xl
+            "
                 alt="Corpo humano"
                 loading="lazy"
               />
@@ -301,7 +312,7 @@ export default function Home() {
         </section>
 
         <section className="py-10 md:py-[100px] px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[130px] bg-[#7f33ff]">
-          <div className="max-w-full md:max-w-[1000px] mx-auto flex justify-between gap-4 sm:gap-6 md:gap-10 flex-wrap text-center">
+          <div className="max-w-full md:max-w-[1000px] mx-auto flex justify-center gap-16 md:gap-24 gap-4 sm:gap-6 md:gap-10 flex-wrap text-center">
             <div className="flex-1 min-w-[150px] md:min-w-[200px]">
               <AiOutlineEye className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
               <h3 className="text-2xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
