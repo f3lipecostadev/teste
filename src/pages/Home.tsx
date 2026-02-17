@@ -1,14 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import {
-  AiFillPlayCircle,
-  AiFillStar,
-  AiOutlineEye,
-  AiOutlineCheck,
-} from "react-icons/ai";
-import { FaGamepad } from "react-icons/fa";
-import { MdSportsEsports } from "react-icons/md";
+import { CirclePlay, Gamepad2, Eye, Check, GraduationCap, Star} from 'lucide-react';
 export default function Home() {
   return (
     <>
@@ -52,7 +45,7 @@ export default function Home() {
                     hover:scale-105
                     hover:shadow-2xl
                   ">
-                  <AiFillPlayCircle className="w-6 h-6 md:w-7 md:h-7" />
+                  <CirclePlay className="w-6 h-6 md:w-7 md:h-7 " />
                   Explorar vídeos em Libras
                 </button>
               </Link>
@@ -87,7 +80,7 @@ export default function Home() {
                     <span className="text-xl md:text-2xl font-extrabold text-[#0b2a4a]">
                       5.0{" "}
                     </span>
-                    <AiFillStar className="text-xl md:text-2xl text-[#FFCC00]" />
+                    <Star className="text-xl md:text-2xl text-[#FFCC00] fill-[#FFCC00]" />
                   </div>
                   <p className="mt-1 text-[#0b2a4a]">Estudo didático</p>
                 </div>
@@ -96,7 +89,7 @@ export default function Home() {
                     <span className="text-xl md:text-2xl font-extrabold text-[#0b2a4a]">
                       5.0{" "}
                     </span>
-                    <AiFillStar className="text-xl md:text-2xl text-[#FFCC00]" />
+                    <Star className="text-xl md:text-2xl text-[#FFCC00] fill-[#FFCC00]" />
                   </div>
                   <p className="mt-1 text-[#0b2a4a]">Ensino interativo</p>
                 </div>
@@ -118,7 +111,7 @@ export default function Home() {
                   <span className="text-xl md:text-2xl font-extrabold text-[#0b2a4a]">
                     5.0{" "}
                   </span>
-                  <AiFillStar className="text-xl md:text-2xl text-[#FFCC00]" />
+                  <Star className="text-xl md:text-2xl text-[#FFCC00] fill-[#FFCC00]" />
                 </div>
                 <p className="mt-1 text-[#0b2a4a]">Didática simples</p>
               </div>
@@ -127,7 +120,7 @@ export default function Home() {
                   <span className="text-xl md:text-2xl font-extrabold text-[#0b2a4a]">
                     5.0{" "}
                   </span>
-                  <AiFillStar className="text-xl md:text-2xl text-[#FFCC00]" />
+                  <Star className="text-xl md:text-2xl text-[#FFCC00] fill-[#FFCC00]" />
                 </div>
                 <p className="mt-1 text-[#0b2a4a]">Conteúdo visual</p>
               </div>
@@ -234,7 +227,7 @@ export default function Home() {
                       hover:scale-105
                       transition-all
                     ">
-                    <MdSportsEsports className="w-6 h-6 md:w-7 md:h-7" />
+                    <Gamepad2 className="w-6 h-6 md:w-7 md:h-7" />
                     Aprenda Jogando!
                   </button>
                 </Link>
@@ -314,7 +307,7 @@ export default function Home() {
         <section className="py-10 md:py-[100px] px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[130px] bg-[#7f33ff]">
           <div className="max-w-full md:max-w-[1000px] mx-auto flex justify-center gap-16 md:gap-24 gap-4 sm:gap-6 md:gap-10 flex-wrap text-center">
             <div className="flex-1 min-w-[150px] md:min-w-[200px]">
-              <AiOutlineEye className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
+              <Eye className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
               <h3 className="text-2xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
                 Assista
               </h3>
@@ -323,7 +316,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex-1 min-w-[150px] md:min-w-[200px]">
-              <FaGamepad className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
+              <GraduationCap className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
               <h3 className="text-2xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
                 Aprenda
               </h3>
@@ -332,7 +325,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex-1 min-w-[150px] md:min-w-[200px]">
-              <AiOutlineCheck className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
+              <Check className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
               <h3 className="text-2xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
                 Avalie
               </h3>
