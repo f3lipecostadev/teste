@@ -14,11 +14,11 @@ export default function Home() {
             from-[#8f5bff]
             to-[#6a2de2]
             px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[130px]
-            pt-10 md:pt-[40px]
-            pb-20 md:pb-[150px]
+            pt-32 md:pt-[40px]
+            pb-28 md:pb-[170px]
           ">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-            <div className="flex flex-col gap-6 md:gap-8 flex-1">
+            <div className="flex flex-col gap-6 md:gap-8 flex-1 items-center md:items-start text-center md:text-left">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5rem] font-extrabold text-[#f8f5ff] leading-tight">
                 Descubra o Corpo <strong>EM LIBRAS</strong>
               </h1>
@@ -31,7 +31,7 @@ export default function Home() {
                 funcionamos ajuda a gente a se comunicar com muito mais
                 precisão, especialmente quando precisamos de ajuda. Vamos nessa?
               </p>
-              <Link to="/videos" className="w-fit">
+              <Link to="/videos" className="w-fit mx-auto md:mx-0">
                 <button
                   className="
                     flex items-center gap-3
@@ -188,7 +188,7 @@ export default function Home() {
             </div>
 
             {/* Direita: Container roxo + botão flutuante */}
-            <div className="flex-1 relative flex justify-center items-center mt-60">
+            <div className="flex-1 relative flex justify-center items-center mt-24 lg:mt-60">
               {/* Wrapper igual ao da esquerda */}
               <div className="relative w-full max-w-[450px]">
                 {/* Container roxo */}
@@ -213,8 +213,8 @@ export default function Home() {
                   <button
                     className="
                       absolute
-                      -bottom-6
-                      -right-40
+                      -bottom-12 md:-bottom-6
+                      right-10 md:-right-40
                       z-10
                       flex items-center gap-3
                       px-8 py-4 md:px-12 md:py-5
@@ -240,7 +240,7 @@ export default function Home() {
             relative
             px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[130px]
             pt-10 md:pt-12
-            pb-20 md:pb-[120px]
+            pb-28 md:pb-[170px]
             bg-gradient-to-b
             from-[#e7b7ff]
             to-[#7f33ff]
@@ -254,8 +254,8 @@ export default function Home() {
                   src="/images/pan-normal.png"
                   className="
                     absolute
-                    -top-28
-                    left-25
+                    -top-2 md:-top-28
+                    left-30 md:left-25
                     w-[100%]
                     z-20
                     drop-shadow-2xl
@@ -305,32 +305,32 @@ export default function Home() {
         </section>
 
         <section className="py-10 md:py-[100px] px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[130px] bg-[#7f33ff]">
-          <div className="max-w-full md:max-w-[1000px] mx-auto flex justify-center gap-16 md:gap-24 gap-4 sm:gap-6 md:gap-10 flex-wrap text-center">
-            <div className="flex-1 min-w-[150px] md:min-w-[200px]">
-              <Eye className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
-              <h3 className="text-2xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
+          <div className="max-w-full md:max-w-[1000px] mx-auto flex justify-center gap-16 md:gap-24 gap-4 sm:gap-6 md:gap-10 text-center">
+            <div className="flex-1 min-w-0">
+              <Eye className="w-8 h-8 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
+              <h3 className="text-xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
                 Assista
               </h3>
-              <p className="text-[#f8f5ff] mt-2 text-lg md:text-xl">
+              <p className="text-[#f8f5ff] mt-2 text-sm md:text-xl">
                 Vídeos em Libras
               </p>
             </div>
-            <div className="flex-1 min-w-[150px] md:min-w-[200px]">
-              <GraduationCap className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
-              <h3 className="text-2xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
+            <div className="flex-1 min-w-0">
+              <GraduationCap className="w-8 h-8 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
+              <h3 className="text-xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
                 Aprenda
               </h3>
-              <p className="text-[#f8f5ff] mt-2 text-lg md:text-xl">
+              <p className="text-[#f8f5ff] mt-2 text-sm md:text-xl">
                 Jogos interativos
               </p>
             </div>
-            <div className="flex-1 min-w-[150px] md:min-w-[200px]">
-              <Check className="w-12 h-12 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
-              <h3 className="text-2xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
+            <div className="flex-1 min-w-0">
+              <Check className="w-8 h-8 md:w-16 md:h-16 mx-auto text-[#f8f5ff]" />
+              <h3 className="text-xl md:text-3xl font-bold text-[#f8f5ff] mt-4">
                 Avalie
               </h3>
-              <p className="text-[#f8f5ff] mt-2 text-lg md:text-xl">
-                Teste seu conhecimento
+              <p className="text-[#f8f5ff] mt-2 text-sm md:text-xl">
+                Feedbacks e melhorias
               </p>
             </div>
           </div>
