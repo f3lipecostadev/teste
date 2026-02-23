@@ -23,7 +23,7 @@ export default function Footer() {
         
         <div className="flex items-center">
           <img
-            src="../../public/images/body-signs.png"
+            src="public/images/body-signs.png"
             alt="Body Signs"
             className="w-48 md:w-56 object-contain"
           />
